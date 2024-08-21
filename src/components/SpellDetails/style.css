@@ -2,7 +2,7 @@
     padding: 20px;
     max-width: 600px;
     margin: 20px auto;
-    background-color: var(--primary-light);
+    background-color: var(--background-gray);
     border-radius: 12px;
     border: 1px solid var(--primary);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@
 .spell-details-container h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: var(--secondary-dark);
+    color: var(--primary-light);
     text-align: center;
 }
 
