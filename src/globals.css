@@ -1,6 +1,7 @@
 :root {
-    --primary: #ddd;
-    --primary-light: #fff;
+    --background: #10101a;
+    --background-gray: #27272A;
+    --primary-light: #ddd;
     --secondary: #555;
     --secondary-dark: #333;
     --terciary: #e74c3c;
@@ -9,7 +10,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--primary);
+    background-color: var(--background);
 }
 
 ul,
