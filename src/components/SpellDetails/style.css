@@ -1,0 +1,82 @@
+.spell-details-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--primary-light);
+    border-radius: 12px;
+    border: 1px solid var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--terciary);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    color: var(--terciary-dark);
+    transform: translateX(-5px);
+}
+
+.spell-details-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--secondary-dark);
+    text-align: center;
+}
+
+.spell-details-container p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+.spell-details-container p svg {
+    margin-right: 10px;
+    color: var(--secondary);
+    font-size: 1.3rem;
+}
+
+.spell-details-container strong {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.spell-details-container .spell-detail-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    background-color: var(--primary-light);
+}
+
+.spell-details-container .spell-detail-section:last-child {
+    margin-bottom: 0;
+}
+
+.spell-details-container .spell-detail-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.spell-details-container .spell-detail-section li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.spell-details-container .spell-detail-section li svg {
+    margin-right: 8px;
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
