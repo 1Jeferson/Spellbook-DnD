@@ -1,0 +1,125 @@
+.filters-container {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-light);
+    font-size: 24px;
+    margin: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.filters-desktop {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--background-gray);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.filters-desktop label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.filters-desktop span {
+    color: var(--primary-light);
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.search-input,
+select {
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--primary-light);
+    border: 2px solid;
+}
+
+.search-input {
+    border-color: var(--primary-light);
+}
+
+select {
+    border-color: var(--primary-light);
+}
+
+.filters-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.filters-modal-content {
+    background-color: var(--background-gray);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-light);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+}
+
+.filters-modal label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filters-modal span {
+    color: var(--primary-light);
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .filters-desktop {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
